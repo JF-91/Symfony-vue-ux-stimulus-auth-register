@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PokemonController!{% endblock %}
+
+{% block body %}
+<div {{ vue_component('Pokemon') }}></div>
+<div {{stimulus_controller('pokemon')}}></div>
+{% endblock %}
